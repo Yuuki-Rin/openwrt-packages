@@ -188,6 +188,10 @@ sed -i 's/"vpn"/"services"/g; s/"VPN"/"Services"/g' luci-app-zerotier/luasrc/con
 # Tailscale
 git_clone https://github.com/MoZhonghua/openwrt-tailscale
 
+# EasyTier
+git_co easytier https://github.com/EasyTier/luci-app-easytier
+git_co luci-app-easytier https://github.com/EasyTier/luci-app-easytier
+
 # IPv6 端口转发
 git_clone https://github.com/big-tooth/luci-app-socatg
 #sed -i 's/socat\r/socatg\r/g' luci-app-socatg/Makefile && sed -i 's/socat$/socatg/g' luci-app-socatg/Makefile
